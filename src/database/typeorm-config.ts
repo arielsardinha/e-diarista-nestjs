@@ -6,7 +6,7 @@ import { DataSourceOptions } from 'typeorm';
 
 @Injectable()
 export class TypeOrmConfigService implements TypeOrmOptionsFactory {
-  createTypeOrmOptions(connectionName?: string): DataSourceOptions {
+  createTypeOrmOptions(): DataSourceOptions {
     return {
       type: 'mysql',
       database: 'ediaristas',
